@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@android:color/white"
+	android:padding="20dp">
+
+	<EditText
+		android:id="@+id/ID_EDT_URL"
+		android:layout_width="match_parent"
+		android:layout_height="80dp"
+		android:text="@string/udp_url" />
+
+	<Button
+		android:id="@+id/ID_BTN_START"
+		android:layout_width="match_parent"
+		android:layout_height="80dp"
+		android:layout_below="@id/ID_EDT_URL"
+		android:text="@string/udp_start" />
+
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<RelativeLayout
+		android:id="@+id/ID_VIEW_VIDEO"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+	</RelativeLayout>
+
+	<Button
+		android:id="@+id/ID_BTN_STOP"
+		android:layout_width="match_parent"
+		android:layout_height="80dp"
+		android:layout_alignParentBottom="true"
+		android:text="START"
+		android:textColor="@android:color/black"
+		android:textSize="14dp" />
+
+
+</RelativeLayout>

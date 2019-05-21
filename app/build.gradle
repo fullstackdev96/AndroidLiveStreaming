@@ -1,0 +1,60 @@
+apply plugin: 'com.android.application'
+
+android {
+	signingConfigs {
+		release {
+			keyAlias 'sergey'
+			keyPassword 'sergey'
+			storeFile file('E:/Work/KeyStore/KeyStore_Sergey.jks')
+			storePassword 'sergey'
+		}
+	}
+	compileSdkVersion 26
+	buildToolsVersion '28.0.3'
+	defaultConfig {
+		applicationId "com.livestream.rtmpsend"
+		minSdkVersion 21
+		targetSdkVersion 26
+	}
+	productFlavors {
+	}
+	buildTypes {
+		release {
+			signingConfig signingConfigs.release
+		}
+	}
+}
+
+dependencies {
+	implementation 'com.android.support:support-v4:26.0.0'
+
+	implementation 'org.bytedeco:javacv:1.4.3'
+	implementation group: 'org.bytedeco.javacpp-presets', name: 'opencv', version: '3.2.1-1.3'
+	implementation group: 'org.bytedeco.javacpp-presets', name: 'ffmpeg', version: '3.2.1-1.3'
+	implementation group: 'org.bytedeco.javacpp-presets', name: 'ffmpeg-platform', version: '3.2.1-1.3'
+
+//	compile group: 'org.bytedeco', name: 'javacv', version: '1.3'
+//	compile group: 'org.bytedeco', name: 'javacpp', version: '1.2.4'
+//	compile group: 'org.bytedeco.javacpp-presets', name: 'opencv', version: '3.1.0-1.2'
+//	compile group: 'org.bytedeco.javacpp-presets', name: 'ffmpeg', version: '3.1.2-1.2'
+//	compile group: 'org.bytedeco.javacpp-presets', name: 'opencv', version: '3.1.0-1.2', classifier: 'android-arm'
+//	compile group: 'org.bytedeco.javacpp-presets', name: 'opencv', version: '3.1.0-1.2', classifier: 'android-x86'
+//	compile group: 'org.bytedeco.javacpp-presets', name: 'ffmpeg', version: '3.1.2-1.2', classifier: 'android-arm'
+//	compile group: 'org.bytedeco.javacpp-presets', name: 'ffmpeg', version: '3.1.2-1.2', classifier: 'android-x86'
+
+
+//	compile(group: 'org.bytedeco', name: 'javacv-platform', version: '1.3')
+//
+//	compile group: 'org.bytedeco.javacpp-presets', name: 'opencv', version: '3.1.0-1.2'
+//	compile group: 'org.bytedeco.javacpp-presets', name: 'ffmpeg', version: '3.1.2-1.2'
+//	{
+//		exclude group: 'org.bytedeco.javacpp-presets'
+//	}
+//	compile group: 'org.bytedeco.javacpp-presets', name: 'ffmpeg', version: '3.2.1-1.3'
+//	compile group: 'org.bytedeco.javacpp-presets', name: 'ffmpeg', version: '3.2.1-1.3', classifier: 'android-arm'
+//	compile(group: 'org.bytedeco', name: 'javacv-platform', version: '1.3'){
+//		exclude group: 'org.bytedeco.javacpp-presets'
+//	}
+//	compile group: 'org.bytedeco.javacpp-presets', name: 'ffmpeg', version: '3.2.1-1.3'
+//	compile group: 'org.bytedeco.javacpp-presets', name: 'ffmpeg', version: '3.2.1-1.3', classifier: 'android-arm'
+}

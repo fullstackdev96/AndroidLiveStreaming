@@ -29,3 +29,4 @@ proguard/
 .idea/
 .settings/
 .gradle/
+app/build
